@@ -1,2 +1,96 @@
-<h2>First Blog</h2>
-<p>This is a scalable blogging platform without AWS.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog | My Cloud Blog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6fb;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .post {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+    }
+
+    .post h2 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .post span {
+      font-size: 14px;
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>📝 Blog Articles</h1>
+  <p>Cloud • Serverless • Free Tools</p>
+</header>
+
+<div class="container">
+
+  <div class="post">
+    <h2>Building a Scalable Blog Without AWS</h2>
+    <span>Published on Jan 2026</span>
+    <p>
+      This blog demonstrates how a highly scalable blogging platform can be
+      built using GitHub Pages and Cloudflare Workers. It supports global CDN,
+      edge redirects, HTTPS, and zero infrastructure cost.
+    </p>
+  </div>
+
+  <div class="post">
+    <h2>Why Serverless is the Future</h2>
+    <span>Published on Jan 2026</span>
+    <p>
+      Serverless architecture removes the complexity of managing servers,
+      allowing developers to focus on writing code while cloud providers
+      handle scalability, performance, and availability.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  ← <a href="index.html">Back to Home</a>
+</footer>
+
+</body>
+</html>
