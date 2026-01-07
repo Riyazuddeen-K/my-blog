@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Blog</title>
+  <meta charset="UTF-8">
+  <title>My Free Cloud Blog</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    /* HEADER */
+    header {
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 40px;
+      background: #ffdd57;
+      color: #333;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .hero a:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    /* FEATURES */
+    .features {
+      background: #fff;
+      color: #333;
+      padding: 80px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #667eea;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>My Free Cloud Blog</h1>
+
+<header>
+  <h1>☁ My Cloud Blog</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Scalable Blogging Platform</h2>
+  <p>
+    A modern cloud-based blog built using free tools, serverless architecture,
+    and global CDN  without AWS and without any cost.
+  </p>
   <a href="blog.html">Read Blogs</a>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3> Serverless</h3>
+    <p>No servers to manage. Hosted on GitHub Pages with edge logic.</p>
+  </div>
+  <div class="card">
+    <h3>Global CDN</h3>
+    <p>Cloudflare delivers content fast from locations worldwide.</p>
+  </div>
+  <div class="card">
+    <h3>100% Free</h3>
+    <p>No AWS, no billing, no credit card required.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 My Free Cloud Blog 
+</footer>
+
 </body>
 </html>
